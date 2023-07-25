@@ -5,6 +5,9 @@ multilingual = false
 src = "src"
 title = "Magazine Guidebook"
 
+[build]
+build-dir = "docs"
+
 [preprocessor]
 
 [preprocessor.admonish]
