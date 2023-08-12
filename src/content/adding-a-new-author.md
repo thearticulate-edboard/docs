@@ -1,7 +1,14 @@
 # Adding a new author
 
+## Checklist
+- Name of author
+- Bio
+- Avatar image of 200x200 size. (See [Image specifications and dimensions](../image-dimensions.md))
 
-1. [Create a new markdown file](../creating-and-managing-new-markdown-files.md) with the following content, replacing relevant parts as necessary
+
+## Steps
+
+1. Create a new markdown file (See [Create a new markdown file](../creating-and-managing-new-markdown-files.md)) with the following content, replacing relevant parts as necessary
 
 ```markdown
 ---
@@ -13,7 +20,7 @@ multiple: false
 ---
 ```
 
-2. [Upload it](../uploading-new-file.md) to `content/authors`
+2. Upload it (See [Upload new file](../uploading-new-file.md)) to `content/authors`
 
 ## Points to remember
 1. The file name should follow the pattern `prefix`-`hypenated-name-in-small-case`.md.
@@ -39,4 +46,3 @@ multiple: false
 
 4. `biolarge` field is not mandatory. If there is content in it, it will appear in the author page, instead on `biosmall`.
 
-5. Blank lines should be strictly avoided.
