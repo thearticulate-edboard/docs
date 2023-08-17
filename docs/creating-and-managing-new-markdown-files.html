@@ -85,7 +85,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded "><a href="terms-you-need-to-know.html"><strong aria-hidden="true">1.</strong> Terms you need to know</a></li><li class="chapter-item expanded "><a href="creating-and-managing-new-markdown-files.html" class="active"><strong aria-hidden="true">2.</strong> Creating and managing markdown files</a></li><li class="chapter-item expanded "><a href="general-structure-of-a-markdown-file-in-hugo.html"><strong aria-hidden="true">3.</strong> General Structure of a markdown file in hugo</a></li><li class="chapter-item expanded "><a href="uploading-new-file.html"><strong aria-hidden="true">4.</strong> Uploading new file</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="content/index.html"><strong aria-hidden="true">5.</strong> Adding content</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="content/adding-a-new-author.html"><strong aria-hidden="true">5.1.</strong> Adding a new author</a></li><li class="chapter-item expanded "><a href="content/adding-a-new-interns-column.html"><strong aria-hidden="true">5.2.</strong> Adding a new interns column</a></li></ol></li><li class="chapter-item expanded "><a href="dev_notes/index.html"><strong aria-hidden="true">6.</strong> Dev Notes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="dev_notes/development-setup.html"><strong aria-hidden="true">6.1.</strong> Development setup</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.2.</strong> Documentation Setup</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded "><a href="licence.html"><strong aria-hidden="true">1.</strong> LICENCE</a></li><li class="chapter-item expanded "><a href="terms-you-need-to-know.html"><strong aria-hidden="true">2.</strong> Terms you need to know</a></li><li class="chapter-item expanded "><a href="creating-and-managing-new-markdown-files.html" class="active"><strong aria-hidden="true">3.</strong> Creating and managing markdown files</a></li><li class="chapter-item expanded "><a href="general-structure-of-a-markdown-file-in-hugo.html"><strong aria-hidden="true">4.</strong> General Structure of a markdown file in hugo</a></li><li class="chapter-item expanded "><a href="uploading-new-file.html"><strong aria-hidden="true">5.</strong> Uploading new file</a></li><li class="chapter-item expanded "><a href="image-dimensions.html"><strong aria-hidden="true">6.</strong> Dealing with images: Dimensions and Softwares</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="content/index.html"><strong aria-hidden="true">7.</strong> Adding content</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="content/adding-a-new-author.html"><strong aria-hidden="true">7.1.</strong> Adding a new author</a></li><li class="chapter-item expanded "><a href="content/adding-a-new-interns-column.html"><strong aria-hidden="true">7.2.</strong> Adding a new interns column</a></li><li class="chapter-item expanded "><a href="content/adding-a-new-painting.html"><strong aria-hidden="true">7.3.</strong> Adding a new painting</a></li><li class="chapter-item expanded "><a href="content/adding-a-new-photography-post.html"><strong aria-hidden="true">7.4.</strong> Adding a new photography post</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -169,15 +169,23 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="creating-and-managing-markdown-files"><a class="header" href="#creating-and-managing-markdown-files">Creating and managing markdown files</a></h1>
-<ol>
-<li>There are several softwares available for markdown file management across platforms. At the time of writing, the following ones are worthy of mention
+<p>There are several softwares available for markdown file management across platforms. At the time of writing, the following ones are worthy of mention</p>
 <ul>
-<li><a href="https://play.google.com/store/apps/details?id=com.seal.markor&amp;hl=en_US&amp;pli=1">markor</a>: Android</li>
+<li><a href="https://f-droid.org/en/packages/net.gsantner.markor/">markor</a>: Android
+<ul>
+<li>NOTE: The author of markor, who is an open source activist, has removed markor from google play store and made it available only in Fdroid(essentially a playstore for open source android apps) and <a href="https://github.com/gsantner/markor/releases/tag/v2.10.9">Markor's Github Repo</a>. You may download latest apk file from either of these and install markor. </li>
+</ul>
+</li>
 <li><a href="https://play.google.com/store/apps/details?id=md.obsidian&amp;hl=en_US">obsidian</a>: Android, Linux, Mac, Windows</li>
 <li><a href="https://vscodium.com/">Visual Studio Code/Vscodium</a>: Linux, Mac, Windows</li>
 </ul>
-</li>
+<p>Markdown files in hugo is divided to 2 parts. The first part lies on top between 2 <code>---</code> and is called &quot;frontmatter&quot;. The remaining part forms the content.</p>
+<p>The frontmatter follows rules of YAML markup language. While it is not necessary to learn the details of YAML, a few points should be remembered</p>
+<ol>
+<li>YAML is a strict about blank spaces. Adding an extra blank space or forgetting to place a blank space can mess up the file. Hugo will refuse to run if the frontmatter of even a single file is inappropriate.</li>
+<li>Blank lines should be strictly avoided.</li>
 </ol>
+<p>The content part follows the Markdown formatting rules. It is necessary for an editor to be familiar with rules of markdown. You may familiarize yourselves with markdown here: <a href="https://www.markdownguide.org/basic-syntax/">Markdown Basic Syntax</a>. These rules are supplemented in a few areas by hugo specific markup. These are explained wherever necessary in this document.</p>
 
                     </main>
 
@@ -208,6 +216,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

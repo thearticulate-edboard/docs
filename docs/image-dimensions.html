@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Development setup - Magazine Guidebook</title>
+        <title>Dealing with images: Dimensions and Softwares - Magazine Guidebook</title>
 
 
         <!-- Custom HTML head -->
@@ -12,24 +12,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="../favicon.svg">
-        <link rel="shortcut icon" href="../favicon.png">
-        <link rel="stylesheet" href="../css/variables.css">
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/chrome.css">
-        <link rel="stylesheet" href="../css/print.css" media="print">
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../fonts/fonts.css">
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href=".././mdbook-admonish.css">
+        <link rel="stylesheet" href="./mdbook-admonish.css">
 
     
     </head>
@@ -37,7 +37,7 @@
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
-            var path_to_root = "../";
+            var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "dark";
         </script>
 
@@ -85,7 +85,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded "><a href="../terms-you-need-to-know.html"><strong aria-hidden="true">1.</strong> Terms you need to know</a></li><li class="chapter-item expanded "><a href="../creating-and-managing-new-markdown-files.html"><strong aria-hidden="true">2.</strong> Creating and managing markdown files</a></li><li class="chapter-item expanded "><a href="../general-structure-of-a-markdown-file-in-hugo.html"><strong aria-hidden="true">3.</strong> General Structure of a markdown file in hugo</a></li><li class="chapter-item expanded "><a href="../uploading-new-file.html"><strong aria-hidden="true">4.</strong> Uploading new file</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../content/index.html"><strong aria-hidden="true">5.</strong> Adding content</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../content/adding-a-new-author.html"><strong aria-hidden="true">5.1.</strong> Adding a new author</a></li><li class="chapter-item expanded "><a href="../content/adding-a-new-interns-column.html"><strong aria-hidden="true">5.2.</strong> Adding a new interns column</a></li></ol></li><li class="chapter-item expanded "><a href="../dev_notes/index.html"><strong aria-hidden="true">6.</strong> Dev Notes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../dev_notes/development-setup.html" class="active"><strong aria-hidden="true">6.1.</strong> Development setup</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.2.</strong> Documentation Setup</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded "><a href="licence.html"><strong aria-hidden="true">1.</strong> LICENCE</a></li><li class="chapter-item expanded "><a href="terms-you-need-to-know.html"><strong aria-hidden="true">2.</strong> Terms you need to know</a></li><li class="chapter-item expanded "><a href="creating-and-managing-new-markdown-files.html"><strong aria-hidden="true">3.</strong> Creating and managing markdown files</a></li><li class="chapter-item expanded "><a href="general-structure-of-a-markdown-file-in-hugo.html"><strong aria-hidden="true">4.</strong> General Structure of a markdown file in hugo</a></li><li class="chapter-item expanded "><a href="uploading-new-file.html"><strong aria-hidden="true">5.</strong> Uploading new file</a></li><li class="chapter-item expanded "><a href="image-dimensions.html" class="active"><strong aria-hidden="true">6.</strong> Dealing with images: Dimensions and Softwares</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="content/index.html"><strong aria-hidden="true">7.</strong> Adding content</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="content/adding-a-new-author.html"><strong aria-hidden="true">7.1.</strong> Adding a new author</a></li><li class="chapter-item expanded "><a href="content/adding-a-new-interns-column.html"><strong aria-hidden="true">7.2.</strong> Adding a new interns column</a></li><li class="chapter-item expanded "><a href="content/adding-a-new-painting.html"><strong aria-hidden="true">7.3.</strong> Adding a new painting</a></li><li class="chapter-item expanded "><a href="content/adding-a-new-photography-post.html"><strong aria-hidden="true">7.4.</strong> Adding a new photography post</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -139,7 +139,7 @@
                     <h1 class="menu-title">Magazine Guidebook</h1>
 
                     <div class="right-buttons">
-                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
 
@@ -168,29 +168,58 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="development-setup"><a class="header" href="#development-setup">Development setup</a></h1>
-<p>You should have installed the following in your system.</p>
+                        <h1 id="image-dimensions"><a class="header" href="#image-dimensions">Image Dimensions</a></h1>
 <ul>
-<li>hugo</li>
-<li>nodejs</li>
-<li>npm</li>
-<li>git</li>
+<li>All images should be converted to <code>webp</code> format. All popular platforms have software that allow conversion to this format. Below given is a non-comprehensive list of software which permits conversion as well as resizing of images. 
+<ul>
+<li>Windows: GIMP</li>
+<li>Linux: Imagemagick, Converseen, GIMP</li>
+<li>Mac: GIMP</li>
+<li>Android: #todo</li>
 </ul>
-<p>Clone the repo.</p>
-<pre><code class="language-bash">git clone https://github.com/thearticulatemagazine/vol1.git thearticulatemagazine
-</code></pre>
-<p>Install the npm dependencies and run hugo and tailwind servers with <code>watch</code> flag set. (Fair warning: Might be taxing on the system if you run couple of more electron apps.)
-Read <code>package.json</code> for other scripts.</p>
-<p>Husky is in place for pre-commit hook of prettier. So you do not have to set <code>format on save</code>. </p>
+</li>
+</ul>
+<p>NOTE: In near future, when support for AVIF format is more widespread, it should be preferred over <code>webp</code> format. At this point Edge browser in windows lacks support for it. See <a href="https://caniuse.com/avif">AVIF usage data</a></p>
+<p>All the following dimensions are given in pixels. Most cropping/resizing apps in web uses pixels as units, unless otherwise mentioned.</p>
+<ul>
+<li>Profile pic of author: <strong>200x200</strong> Mandatory</li>
+<li>Images for posts: Min width of <strong>400px</strong>, Max width of <strong>650px</strong>.
+<ul>
+<li>No set limit for height. </li>
+<li>Prefer 650px if possible.</li>
+</ul>
+</li>
+<li>Image for post that is in focus: Width of <strong>750px</strong>. 
+<ul>
+<li>No set limit for height. </li>
+<li>Prefer landscape orientation if possible.</li>
+</ul>
+</li>
+<li>Photo thumbnails: <strong>400x300</strong> Mandatory</li>
+<li>Photos: Max width of <strong>1280</strong>. 
+<ul>
+<li>No set limit in height.</li>
+</ul>
+</li>
+<li>Painting thumbnails: <strong>400x300</strong> Mandatory</li>
+<li>Painting: Max width of <strong>1280</strong>. 
+<ul>
+<li>No set limit in height.</li>
+</ul>
+</li>
+</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../dev_notes/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="uploading-new-file.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
+                            <a rel="next" href="content/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -198,14 +227,33 @@ Read <code>package.json</code> for other scripts.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../dev_notes/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="uploading-new-file.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
+                    <a rel="next" href="content/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
@@ -215,13 +263,13 @@ Read <code>package.json</code> for other scripts.</p>
         </script>
 
 
-        <script src="../elasticlunr.min.js"></script>
-        <script src="../mark.min.js"></script>
-        <script src="../searcher.js"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="../clipboard.min.js"></script>
-        <script src="../highlight.js"></script>
-        <script src="../book.js"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
 

@@ -2,7 +2,7 @@
 
 ## Checklist
 - Name of author
-- Bio
+- Bio or Batch
 - Avatar image of 200x200 size. (See [Image specifications and dimensions](../image-dimensions.md))
 
 
@@ -14,7 +14,7 @@
 ---
 title: "Sachin Tendulkar"
 biosmall: "A phenomenon with a willow"
-biolarge:
+biolarge: "The man who carried the burden of a billion hopes for over 2 decades. His centuries were held a nation together while it was ailing in political turmoils, economic downturns and setbacks in practically every field.
 avatar: https://link/to/image
 multiple: false
 ---

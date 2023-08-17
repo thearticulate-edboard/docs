@@ -85,7 +85,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded "><a href="../terms-you-need-to-know.html"><strong aria-hidden="true">1.</strong> Terms you need to know</a></li><li class="chapter-item expanded "><a href="../creating-and-managing-new-markdown-files.html"><strong aria-hidden="true">2.</strong> Creating and managing markdown files</a></li><li class="chapter-item expanded "><a href="../general-structure-of-a-markdown-file-in-hugo.html"><strong aria-hidden="true">3.</strong> General Structure of a markdown file in hugo</a></li><li class="chapter-item expanded "><a href="../uploading-new-file.html"><strong aria-hidden="true">4.</strong> Uploading new file</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../content/index.html"><strong aria-hidden="true">5.</strong> Adding content</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../content/adding-a-new-author.html" class="active"><strong aria-hidden="true">5.1.</strong> Adding a new author</a></li><li class="chapter-item expanded "><a href="../content/adding-a-new-interns-column.html"><strong aria-hidden="true">5.2.</strong> Adding a new interns column</a></li></ol></li><li class="chapter-item expanded "><a href="../dev_notes/index.html"><strong aria-hidden="true">6.</strong> Dev Notes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../dev_notes/development-setup.html"><strong aria-hidden="true">6.1.</strong> Development setup</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.2.</strong> Documentation Setup</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded "><a href="../licence.html"><strong aria-hidden="true">1.</strong> LICENCE</a></li><li class="chapter-item expanded "><a href="../terms-you-need-to-know.html"><strong aria-hidden="true">2.</strong> Terms you need to know</a></li><li class="chapter-item expanded "><a href="../creating-and-managing-new-markdown-files.html"><strong aria-hidden="true">3.</strong> Creating and managing markdown files</a></li><li class="chapter-item expanded "><a href="../general-structure-of-a-markdown-file-in-hugo.html"><strong aria-hidden="true">4.</strong> General Structure of a markdown file in hugo</a></li><li class="chapter-item expanded "><a href="../uploading-new-file.html"><strong aria-hidden="true">5.</strong> Uploading new file</a></li><li class="chapter-item expanded "><a href="../image-dimensions.html"><strong aria-hidden="true">6.</strong> Dealing with images: Dimensions and Softwares</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../content/index.html"><strong aria-hidden="true">7.</strong> Adding content</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../content/adding-a-new-author.html" class="active"><strong aria-hidden="true">7.1.</strong> Adding a new author</a></li><li class="chapter-item expanded "><a href="../content/adding-a-new-interns-column.html"><strong aria-hidden="true">7.2.</strong> Adding a new interns column</a></li><li class="chapter-item expanded "><a href="../content/adding-a-new-painting.html"><strong aria-hidden="true">7.3.</strong> Adding a new painting</a></li><li class="chapter-item expanded "><a href="../content/adding-a-new-photography-post.html"><strong aria-hidden="true">7.4.</strong> Adding a new photography post</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -169,19 +169,26 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="adding-a-new-author"><a class="header" href="#adding-a-new-author">Adding a new author</a></h1>
+<h2 id="checklist"><a class="header" href="#checklist">Checklist</a></h2>
+<ul>
+<li>Name of author</li>
+<li>Bio or Batch</li>
+<li>Avatar image of 200x200 size. (See <a href="../image-dimensions.html">Image specifications and dimensions</a>)</li>
+</ul>
+<h2 id="steps"><a class="header" href="#steps">Steps</a></h2>
 <ol>
-<li><a href="../creating-and-managing-new-markdown-files.html">Create a new markdown file</a> with the following content, replacing relevant parts as necessary</li>
+<li>Create a new markdown file (See <a href="../creating-and-managing-new-markdown-files.html">Create a new markdown file</a>) with the following content, replacing relevant parts as necessary</li>
 </ol>
 <pre><code class="language-markdown">---
 title: &quot;Sachin Tendulkar&quot;
 biosmall: &quot;A phenomenon with a willow&quot;
-biolarge:
+biolarge: &quot;The man who carried the burden of a billion hopes for over 2 decades. His centuries were held a nation together while it was ailing in political turmoils, economic downturns and setbacks in practically every field.
 avatar: https://link/to/image
 multiple: false
 ---
 </code></pre>
 <ol start="2">
-<li><a href="../uploading-new-file.html">Upload it</a> to <code>content/authors</code></li>
+<li>Upload it (See <a href="../uploading-new-file.html">Upload new file</a>) to <code>content/authors</code></li>
 </ol>
 <h2 id="points-to-remember"><a class="header" href="#points-to-remember">Points to remember</a></h2>
 <ol>
@@ -213,12 +220,7 @@ multiple: false
 </ol>
 <p><img src="image-3.png" alt="Alt text" /></p>
 <ol start="4">
-<li>
-<p><code>biolarge</code> field is not mandatory. If there is content in it, it will appear in the author page, instead on <code>biosmall</code>.</p>
-</li>
-<li>
-<p>Blank lines should be strictly avoided.</p>
-</li>
+<li><code>biolarge</code> field is not mandatory. If there is content in it, it will appear in the author page, instead on <code>biosmall</code>.</li>
 </ol>
 
                     </main>
@@ -250,6 +252,22 @@ multiple: false
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

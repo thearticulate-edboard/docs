@@ -9,18 +9,27 @@ For the purpose of this License, the following terms should be considered as def
 - **Magazine**: "The Articulate" e-magazine.
 - **Edboard**: Editorial board entrusted with publishing "The Articulate" at the time of viewing of this document.
 - **MagEds**: Chief Editors of above said edboard.
-- **The original duo**: Miss Akanksha Singh Gaur and Miss Astha Gawai of Batch 2019, Government Medical College, Ratlam.
+- **AG & ASG**: Miss Astha Gawai and Miss Akanksha Singh Gaur of Batch 2019, Government Medical College, Ratlam. In case both of them are unavailable, whoever is the oldest person to hold the position of MagEd alive at the time should be considered.
 
 ## Clauses of License
-1. The license to use the codebase is hereby granted to the original duo and whoever follows them as the MagEds of "The Articulate" elected in line with Magazine Constitution. 
-   1. There are several clauses which will make this permission "NULL and VOID". These situations will be explained in magazine constitution. See [Upon Nullification of Permission](#upon-nullification-of-permission)
-2. Usage of whole or part of the codebase to any purpose outside the "The Articulate" is STRICTLY FORBIDDEN.
-3. Any matter not covered by the above clauses will be covered by [AGPL-3 License](https://www.gnu.org/licenses/agpl-3.0.en.html). 
+1. The license to use the codebase in perpetuity is hereby granted to AG & ASG and whoever follows them as the MagEds of "The Articulate" elected in line with clauses in [Election of MagEds](#election-of-mageds). This permission can ONLY be withdrawn if ever any of the [Conditions considered as violation of licensing terms](#conditions-considered-as-violation-of-licensing-terms) is met. Upon such a situation, please see [Upon Withdrawal of Permission](#upon-withdrawal-of-permission-to-use-codebase) to know how to move forward.
+2. Usage of whole or part of the codebase to any purpose outside the "The Articulate" is forbidden.
+3. Any matter not covered by the above clauses is left to discretion of AG & ASG.
 
-## Upon Nullification of Permission
+## Conditions considered as violation of licensing terms
+1. Publication of any item in the magazine that is intended to hurt a community, will act as a dog-whistle, or is intended to publicize agendas/propaganda of a political party. The decision authority regarding what constitutes these will be AG & ASG (See [Terms](#terms)). 
+2. Violation of Authors' Rights. See [Authors' Rights](#authors-rights)
+3. Violation of Collegium System of election of MagEds. See [Election of Mage Eds](#election-of-mageds)
+
+## Election of MagEds
+New MagEds are elected by outgoing MagEds in consultation with outgoing Edboard. This collegium system should prevail even when the rest of Students Union posts are open to general election. This is to ensure that magazine remains free of politics and the post is occupied by the most deserving. Overriding this and open the post of MagEds to general election will be considered as violation of licensing terms and permission to use codebase should be considered withdrawn. See [Upon Withdrawal of Permission](#upon-withdrawal-of-permission-to-use-codebase)
+
+The two chief editors of magazine will be part of Students' Union Executive Council but will collectively hold only one vote in matters of Students' Union Executive Council.
+
+## Upon Withdrawal of Permission to Use Codebase
 1. Usage of whole or part of codebase must be suspended with immediate effect. 
-2. Any continued usage should be done ONLY after written communication with any or both of the original duo (See [Terms](#terms)) and will depend upon their permission via email or other means of reproducible communication available at the time.
-3. Violation of EITHER of the above clauses will constitute an act of copyright infringement and open the MagEds at the time of violation to measures deemed fit by copyright owner of the codebase.
+2. Any continued usage should be done ONLY after written communication with any or both of AG & ASG (See [Terms](#terms)) and will depend upon their permission via email or other means of reproducible communication available at the time.
+3. Violation of EITHER of the above clauses will constitute an act of copyright infringement and open the MagEds at the time to measures deemed fit by copyright owner of codebase.
 
 ## Chief Editors' Rights
 A voluntary submission of content to the magazine entitles the MagEds to the following rights:

@@ -1,5 +1,15 @@
 # Adding a new painting
 
+
+## Checklist
+
+- Author's name, avatar, bio
+- Appropriately resized image, thumnail
+- Title for the post
+- Accompanying quote.
+
+---
+
 1. If it is a new author, create an author file for her/him. See [Adding a new author](./adding-a-new-author.md)
 2. If it is an existing author, ensure that her/his author file has `multiple` field set to `true`
 3. All paintings should follow size specifications mentioned in [Image specifications and dimensions](../image-dimensions.md)
@@ -26,10 +36,5 @@ Appropriate quote here
 ```
 1. Upload it (See [Upload new file](../uploading-new-file.md)) to `content/painting`
 
-## Checklist
 
-- Author's name, avatar, bio
-- Appropriately resized image, thumnail
-- Title for the post
-- Accompanying quote.
 

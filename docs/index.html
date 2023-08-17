@@ -85,7 +85,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html" class="active">Introduction</a></li><li class="chapter-item expanded "><a href="terms-you-need-to-know.html"><strong aria-hidden="true">1.</strong> Terms you need to know</a></li><li class="chapter-item expanded "><a href="creating-and-managing-new-markdown-files.html"><strong aria-hidden="true">2.</strong> Creating and managing markdown files</a></li><li class="chapter-item expanded "><a href="general-structure-of-a-markdown-file-in-hugo.html"><strong aria-hidden="true">3.</strong> General Structure of a markdown file in hugo</a></li><li class="chapter-item expanded "><a href="uploading-new-file.html"><strong aria-hidden="true">4.</strong> Uploading new file</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="content/index.html"><strong aria-hidden="true">5.</strong> Adding content</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="content/adding-a-new-author.html"><strong aria-hidden="true">5.1.</strong> Adding a new author</a></li><li class="chapter-item expanded "><a href="content/adding-a-new-interns-column.html"><strong aria-hidden="true">5.2.</strong> Adding a new interns column</a></li></ol></li><li class="chapter-item expanded "><a href="dev_notes/index.html"><strong aria-hidden="true">6.</strong> Dev Notes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="dev_notes/development-setup.html"><strong aria-hidden="true">6.1.</strong> Development setup</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.2.</strong> Documentation Setup</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html" class="active">Introduction</a></li><li class="chapter-item expanded "><a href="licence.html"><strong aria-hidden="true">1.</strong> LICENCE</a></li><li class="chapter-item expanded "><a href="terms-you-need-to-know.html"><strong aria-hidden="true">2.</strong> Terms you need to know</a></li><li class="chapter-item expanded "><a href="creating-and-managing-new-markdown-files.html"><strong aria-hidden="true">3.</strong> Creating and managing markdown files</a></li><li class="chapter-item expanded "><a href="general-structure-of-a-markdown-file-in-hugo.html"><strong aria-hidden="true">4.</strong> General Structure of a markdown file in hugo</a></li><li class="chapter-item expanded "><a href="uploading-new-file.html"><strong aria-hidden="true">5.</strong> Uploading new file</a></li><li class="chapter-item expanded "><a href="image-dimensions.html"><strong aria-hidden="true">6.</strong> Dealing with images: Dimensions and Softwares</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="content/index.html"><strong aria-hidden="true">7.</strong> Adding content</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="content/adding-a-new-author.html"><strong aria-hidden="true">7.1.</strong> Adding a new author</a></li><li class="chapter-item expanded "><a href="content/adding-a-new-interns-column.html"><strong aria-hidden="true">7.2.</strong> Adding a new interns column</a></li><li class="chapter-item expanded "><a href="content/adding-a-new-painting.html"><strong aria-hidden="true">7.3.</strong> Adding a new painting</a></li><li class="chapter-item expanded "><a href="content/adding-a-new-photography-post.html"><strong aria-hidden="true">7.4.</strong> Adding a new photography post</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -176,7 +176,7 @@
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
 
-                            <a rel="next" href="terms-you-need-to-know.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="licence.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -187,13 +187,29 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
 
-                    <a rel="next" href="terms-you-need-to-know.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="licence.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

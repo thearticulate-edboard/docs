@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Dev Notes - Magazine Guidebook</title>
+        <title>Adding a new photography post - Magazine Guidebook</title>
 
 
         <!-- Custom HTML head -->
@@ -85,7 +85,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded "><a href="../terms-you-need-to-know.html"><strong aria-hidden="true">1.</strong> Terms you need to know</a></li><li class="chapter-item expanded "><a href="../creating-and-managing-new-markdown-files.html"><strong aria-hidden="true">2.</strong> Creating and managing markdown files</a></li><li class="chapter-item expanded "><a href="../general-structure-of-a-markdown-file-in-hugo.html"><strong aria-hidden="true">3.</strong> General Structure of a markdown file in hugo</a></li><li class="chapter-item expanded "><a href="../uploading-new-file.html"><strong aria-hidden="true">4.</strong> Uploading new file</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../content/index.html"><strong aria-hidden="true">5.</strong> Adding content</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../content/adding-a-new-author.html"><strong aria-hidden="true">5.1.</strong> Adding a new author</a></li><li class="chapter-item expanded "><a href="../content/adding-a-new-interns-column.html"><strong aria-hidden="true">5.2.</strong> Adding a new interns column</a></li></ol></li><li class="chapter-item expanded "><a href="../dev_notes/index.html" class="active"><strong aria-hidden="true">6.</strong> Dev Notes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../dev_notes/development-setup.html"><strong aria-hidden="true">6.1.</strong> Development setup</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.2.</strong> Documentation Setup</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded "><a href="../licence.html"><strong aria-hidden="true">1.</strong> LICENCE</a></li><li class="chapter-item expanded "><a href="../terms-you-need-to-know.html"><strong aria-hidden="true">2.</strong> Terms you need to know</a></li><li class="chapter-item expanded "><a href="../creating-and-managing-new-markdown-files.html"><strong aria-hidden="true">3.</strong> Creating and managing markdown files</a></li><li class="chapter-item expanded "><a href="../general-structure-of-a-markdown-file-in-hugo.html"><strong aria-hidden="true">4.</strong> General Structure of a markdown file in hugo</a></li><li class="chapter-item expanded "><a href="../uploading-new-file.html"><strong aria-hidden="true">5.</strong> Uploading new file</a></li><li class="chapter-item expanded "><a href="../image-dimensions.html"><strong aria-hidden="true">6.</strong> Dealing with images: Dimensions and Softwares</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../content/index.html"><strong aria-hidden="true">7.</strong> Adding content</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../content/adding-a-new-author.html"><strong aria-hidden="true">7.1.</strong> Adding a new author</a></li><li class="chapter-item expanded "><a href="../content/adding-a-new-interns-column.html"><strong aria-hidden="true">7.2.</strong> Adding a new interns column</a></li><li class="chapter-item expanded "><a href="../content/adding-a-new-painting.html"><strong aria-hidden="true">7.3.</strong> Adding a new painting</a></li><li class="chapter-item expanded "><a href="../content/adding-a-new-photography-post.html" class="active"><strong aria-hidden="true">7.4.</strong> Adding a new photography post</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -168,24 +168,53 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="dev-notes"><a class="header" href="#dev-notes">Dev Notes</a></h1>
-<p>Notes for those who intend to modify the code or is generally curious.</p>
-<h2 id="points-to-remember"><a class="header" href="#points-to-remember">Points to remember</a></h2>
+                        <h1 id="adding-a-new-photography-post"><a class="header" href="#adding-a-new-photography-post">Adding a new photography post</a></h1>
 <ol>
-<li><strong>Do not mess up</strong>. Go ahead if you know what you are doing. You do not want to be the person responsible for magazine site going down. Nobody is coming to save you. Read it again. Now read it two more times.</li>
+<li>If it is a new author, create an author file for her/him. See <a href="./adding-a-new-author.html">Adding a new author</a></li>
+<li>If it is an existing author, ensure that her/his author file has <code>multiple</code> field set to <code>true</code></li>
+<li>All photos should follow size specifications mentioned in <a href="../image-dimensions.html">Image specifications and dimensions</a></li>
+<li>Duplicate each photo to create a thumbnail. Thumbnails should also follow size specifications mentioned in <a href="../image-dimensions.html">Image specifications and dimensions</a>.</li>
+<li>Upload photos and thumbnails to image host (See <a href="../uploading-images.html">Uploading images</a>) and collect their direct links.</li>
+<li>Create a new markdown file (See <a href="../creating-and-managing-new-markdown-files.html">Create a new markdown file</a>) with the following content, replacing relevant parts as necessary</li>
 </ol>
+<pre><code class="language-markdown">---
+title: &quot;Appropriate title&quot;
+authid: ug-2023-sachin-tendulkar
+img: https:link/to/thumbnail/image
+tags: []
+date: 2023-07-20T07:30:08+05:30
+photos:
+  - img: &quot;https:link/to/img/one&quot;
+    thumb: &quot;https:link/to/thumb/one&quot;
+  - img: &quot;https:link/to/img/two&quot;
+    thumb: &quot;https:link/to/thumb/two&quot;
+---
+
+{{&lt; quote &gt;}}
+
+Appropriate quote here
+
+{{&lt; /quote &gt;}}
+</code></pre>
+<ol start="7">
+<li>Upload it (See <a href="../uploading-new-file.html">Upload new file</a>) to <code>content/photography</code></li>
+</ol>
+<h2 id="checklist"><a class="header" href="#checklist">Checklist</a></h2>
+<ul>
+<li>Author's name, avatar, bio</li>
+<li>Appropriately resized images, thumnails</li>
+<li>Title for the post</li>
+<li>Accompanying quote.</li>
+</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../content/adding-a-new-interns-column.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../content/adding-a-new-painting.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="../dev_notes/development-setup.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -193,17 +222,30 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../content/adding-a-new-interns-column.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../content/adding-a-new-painting.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../dev_notes/development-setup.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

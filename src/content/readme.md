@@ -13,4 +13,5 @@ Depending on type of content, refer to appropriate instructions below.
 6. Book Review
 7. Movie Review
 8. Video
-9. Photography
+9. [Painting](./adding-a-new-painting.md)
+10. [Photography](./adding-a-new-photography-post.md)
